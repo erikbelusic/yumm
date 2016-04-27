@@ -1,0 +1,32 @@
+.site-logo,
+.site-tagline {
+  color: lighten($gray-light, 10%);
+}
+
+.site-logo {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 60px;
+  float: none !important;
+  &:hover {
+    text-decoration: none;
+    color: $brand-primary;
+  }
+}
+
+.site-tagline {
+  line-height: 1;
+  display: block;
+  font-family: $font-family-base;
+  font-size: 18px;
+}
+
+.navbar-default {
+  border-radius: 0;
+  background: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}

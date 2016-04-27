@@ -1,0 +1,9 @@
+.post,
+.recipe {
+  padding-bottom:30px;
+  margin-bottom:30px;
+  border-bottom:1px solid darken($gray-lighter, 10%);
+}
+.post-excerpt p {
+  margin-bottom:0
+}
