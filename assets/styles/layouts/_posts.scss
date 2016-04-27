@@ -1,9 +1,16 @@
 .post,
 .recipe {
-  padding-bottom:30px;
-  margin-bottom:30px;
-  border-bottom:1px solid darken($gray-lighter, 10%);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid darken($gray-lighter, 10%);
 }
+
 .post-excerpt p {
-  margin-bottom:0
+  margin-bottom: 0
+}
+
+.single-recipe {
+  .wp-post-image {
+    margin-top: 20px;
+  }
 }

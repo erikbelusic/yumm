@@ -7,6 +7,7 @@ $files = [
     "lib/init.php",
     "lib/cpt.php",
     "lib/scripts.php",
+    "lib/template-tags.php"
 ];
 
 foreach ($files as $file) {
