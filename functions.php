@@ -49,3 +49,14 @@ if (!function_exists('yumm_wysiwyg_content_filter')) {
     }
 }
 add_filter( 'the_content', 'yumm_wysiwyg_content_filter' );
+
+if (!function_exists('yumm_excerpt_read_more')) {
+    /*
+     * Replaces the default excerpt "read more" text
+     */
+    function yumm_excerpt_read_more($more)
+    {
+        return '&nbsp;<strong>[...Click to expand]</strong>';
+    }
+}
+add_filter('excerpt_more', 'yumm_excerpt_read_more');

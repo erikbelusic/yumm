@@ -26,16 +26,20 @@
 <body <?php body_class(); ?>>
 <header class="site-header">
     <div class="container">
-        <nav class="navbar navbar-default">
-                <div class="site-brand-container text-center">
-                    <a class="site-logo" href="<?php bloginfo('url'); ?>">
-                        <?php bloginfo(); ?>
-                    </a>
-                    <small class="site-tagline"><?php bloginfo('description'); ?></small>
-                </div>
-        </nav>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <nav class="navbar navbar-default">
+                    <div class="site-brand-container text-center">
+                        <a class="site-logo" href="<?php bloginfo('url'); ?>">
+                            <?php bloginfo(); ?>
+                        </a>
+                        <small class="site-tagline"><?php bloginfo('description'); ?></small>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-sm-10 col-sm-offset-1">

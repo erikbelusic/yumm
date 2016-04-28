@@ -1,8 +1,7 @@
-<article <?php post_class(); ?>>
-    <a href="<?php the_permalink(); ?>"><h3 class="post-title"><?php the_title(); ?></h3></a>
-    <?php if (has_post_thumbnail()) : ?>
-    <?php the_post_thumbnail('large', 'class=img-responsive'); ?>
-    <?php else: ?>
-        <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=110&txt=coming+soon!&w=760&h=500&txttrack=0">
-    <?php endif; ?>
+<article <?php post_class(); ?>
+    style="background:url(<?= (has_post_thumbnail()) ? wp_get_attachment_url( get_post_thumbnail_id($post->ID) ) : "https://placeholdit.imgix.net/~text?txtsize=110&txt=coming+soon!&w=760&h=500&txttrack=0" ?>) center no-repeat;
+        background-size:cover;">
+    <div class="post-title-container">
+        <a href="<?php the_permalink(); ?>"><h2 class="post-title"><?php the_title(); ?></h2></a>
+    </div>
 </article>

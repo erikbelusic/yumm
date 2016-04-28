@@ -1,0 +1,54 @@
+.home-item-heading {
+  padding-bottom: 20px;
+}
+
+.home-item {
+  padding-bottom: 30px;
+  h2 {
+    margin-top: 0;
+  }
+  .post-excerpt {
+    transition: opacity 0.5s;
+  }
+  .post-full-content,
+  .close-button {
+    display: none;
+  }
+  &.expanded {
+    .post-full-content,
+    .close-button {
+      display: block;
+    }
+    .post-excerpt {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.recipe-category-list {
+  border-bottom: 1px solid darken($gray-lighter, 10%);
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0px;
+    }
+    a {
+      display: inline-block;
+      background: $gray-lighter;
+      padding: 5px 10px;
+      &:hover {
+        background: $brand-primary;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.taxonomy-title {
+  margin-bottom: 30px;
+}

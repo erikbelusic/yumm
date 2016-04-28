@@ -4,6 +4,9 @@
  */
 
 if (!function_exists('yumm_list_recipe_categories')) {
+    /*
+     * Returns comma separated HTML links with the recipe categories for the current recipe.
+     */
     function yumm_list_recipe_categories()
     {
         global $post;
@@ -22,7 +25,27 @@ if (!function_exists('yumm_list_recipe_categories')) {
         return $termsMarkup;
     }
 }
+if (!function_exists('yumm_list_all_recipe_categories')) {
+    /*
+     * Returns HTML links wrapped in <li> for all non empty recipe categories.
+     */
+    function yumm_list_all_recipe_categories()
+    {
+        $terms = get_terms(['taxonomy' => 'recipecategory', 'hide_empty' => true]);
+
+        $termsMarkup = "";
+
+        foreach($terms as $index => $term) {
+            $termsMarkup .= '<li><a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
+        }
+
+        return $termsMarkup;
+    }
+}
 if (!function_exists('yumm_has_recipe_categories')) {
+    /*
+     * Checks if the current recipe is in any recipe categories.
+     */
     function yumm_has_recipe_categories() {
         global $post;
 
