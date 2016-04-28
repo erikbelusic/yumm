@@ -52,3 +52,14 @@ if (!function_exists('yumm_has_recipe_categories')) {
         return (bool) count(wp_get_post_terms( $post->ID, 'recipecategory'));
     }
 }
+
+if (!function_exists('bootstrap_pagination_links')) {
+    /*
+     * Outputs HTML for bootstrap pagination links.
+     *
+     * Replaces the default class on paginate_links with the bootstrap class.
+     */
+    function bootstrap_pagination_links() {
+        return str_replace('<ul class=\'page-numbers\'>', '<ul class="pagination">', paginate_links(['type' => 'list']));
+    }
+}

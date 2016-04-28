@@ -1,6 +1,14 @@
 # yumm
 
-##data
+## Requirements
+- WordPress 4.5 +
+- PHP 5.4 +
+- For additional theme development, npm and bower are required
+- Compiled assets are included in the theme repo for easy installation.
+
+###checklist
+
+####data
 blog post
 - [x] title
 - [x] date
@@ -12,8 +20,8 @@ recipe
 - [x] the recipe itself
 - [x] picture
 
-##pages
-- [] Home page
+####pages
+- [x] Home page
   - [x] Simple feed of the posts and recipes in date order
     - [x] For posts show: 
       - [x] Title
