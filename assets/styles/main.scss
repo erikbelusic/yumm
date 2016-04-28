@@ -3,7 +3,8 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 @import "common/global";
-//@import "components/wp-classes";
+@import "components/wp-classes";
+@import "components/wysiwyg";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/posts";
