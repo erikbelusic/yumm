@@ -1,15 +1,30 @@
 # yumm
 
 ##data
-Each blog post will have a title, date, and the content of the post. A recipe has a name, an author, category, the recipe itself, and a picture
+blog post
+- [x] title
+- [x] date
+- [x] content
+recipe
+- [x] name
+- [x] author
+- [x] category
+- [x] the recipe itself
+- [x] picture
 
 ##pages
 - [] Home page
   - [] Simple feed of the posts and recipes in date order
-    - [] For posts show: Title, date, and a short snippet.
+    - [x] For posts show: 
+      - [x] Title
+      - [x] date
+      - [x] short snippet.
     - [] Clicking on a post snippet expands the post inline.
-    - [] Clicking on the title takes you to the post page.
-    - [] For recipes show: Name, thumbnail ­ List of recipe categories
+    - [x] Clicking on the title takes you to the post page.
+    - [x] For recipes show:
+      - [x] Name
+      - [x] thumbnail
+    - [] List of recipe categories
 - [] Blog post
   - [] Show all fields
 - [] Recipe
