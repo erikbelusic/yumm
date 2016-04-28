@@ -1,27 +1,44 @@
 .home-item-heading {
   padding-bottom: 20px;
 }
-
 .home-item {
   padding-bottom: 30px;
   h2 {
     margin-top: 0;
   }
-  .post-excerpt {
-    transition: opacity 0.5s;
-  }
-  .post-full-content,
   .close-button {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    .glyphicon {
+      font-size:20px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .post-excerpt,
+  .post-full-content {
+    overflow: hidden;
+  }
+  .post-excerpt {
+    transition: opacity 0.5s, height 0.5s;
+    opacity: 1;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .post-full-content {
+    transition: opacity 1s, height 1s;
+    height: 0;
+    opacity: 0;
   }
   &.expanded {
-    .post-full-content,
     .close-button {
-      display: block;
-    }
-    .post-excerpt {
-      opacity: 0;
-      pointer-events: none;
+      opacity: 1;
+      pointer-events: inherit;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -34,9 +51,10 @@
   padding-bottom: 30px;
   li {
     display: inline-block;
-    margin-left: 10px;
-    &:first-child {
-      margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    &:last-child {
+      margin-right: 0px;
     }
     a {
       display: inline-block;
@@ -49,6 +67,7 @@
     }
   }
 }
+
 .taxonomy-title {
   margin-bottom: 30px;
 }
