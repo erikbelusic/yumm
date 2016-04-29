@@ -44,9 +44,9 @@
         requestAnimationFrame(renderAnimations);
         var scrolled = $(window).scrollTop();
         if(scrolled > 180) {
-            $('.back-to-top').fadeIn('fast');
+            $('.back-to-top').addClass('visible');
         } else {
-            $('.back-to-top').fadeOut('fast');
+            $('.back-to-top').removeClass('visible');
         }
     }
     renderAnimations();

@@ -6,11 +6,17 @@
 }
 
 .back-to-top {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
   background: lighten($brand-primary, 10%);
   border-color: lighten($brand-primary, 10%);
   border-radius: 0;
   position: fixed;
   bottom: 60px;
   right: 30px;
+  &.visible {
+    opacity: 1;
+    pointer-events: inherit;
+  }
 }
