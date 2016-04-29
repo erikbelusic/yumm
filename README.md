@@ -27,7 +27,7 @@ recipe
       - [x] Title
       - [x] date
       - [x] short snippet.
-    - [] Clicking on a post snippet expands the post inline. do better?
+    - [x] Clicking on a post snippet expands the post inline.
     - [x] Clicking on the title takes you to the post page.
     - [x] For recipes show:
       - [x] Name
