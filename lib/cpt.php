@@ -14,10 +14,10 @@
  * similar market place.
  */
 
-/*
- * Register Custom Post Types for Recipes
- */
 if (!function_exists('yumm_recipe_post_type')) {
+    /*
+     * Register Custom Post Types for Recipes
+     */
     function yumm_recipe_post_type()
     {
         $labels = [
@@ -72,10 +72,10 @@ if (!function_exists('yumm_recipe_post_type')) {
 }
 add_action('init', 'yumm_recipe_post_type', 0);
 
-/*
- * Register Custom Taxonomy for Recipe Categories
- */
 if (!function_exists('yumm_recipe_category_taxonomy')) {
+    /*
+     * Register Custom Taxonomy for Recipe Categories
+     */
     function yumm_recipe_category_taxonomy() {
         $labels = [
             'name' => _x('Recipe Categories', 'Taxonomy General Name', 'yumm'),
