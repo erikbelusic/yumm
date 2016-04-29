@@ -1,5 +1,8 @@
 <?php
 if (!function_exists('yumm_theme_setup')) {
+    /*
+     * Do theme setup stuff in here....
+     */
     function yumm_theme_setup()
     {
         /*
@@ -11,8 +14,3 @@ if (!function_exists('yumm_theme_setup')) {
     }
 }
 add_action( 'after_setup_theme', 'yumm_theme_setup' );
-
-function register_nav_menu_locations() {
-    register_nav_menu('primary-navigation', __( 'Primary Navigation' ));
-}
-add_action( 'init', 'register_nav_menu_locations' );
