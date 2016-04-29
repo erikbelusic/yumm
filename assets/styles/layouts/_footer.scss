@@ -4,3 +4,13 @@
   background: lighten($brand-primary, 10%);
   color: #ffffff;
 }
+
+.back-to-top {
+  display: none;
+  background: lighten($brand-primary, 10%);
+  border-color: lighten($brand-primary, 10%);
+  border-radius: 0;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+}

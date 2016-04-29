@@ -11,6 +11,7 @@
         </div>
     </div><!-- .container -->
 </footer>
+<button class="back-to-top btn btn-primary"><i class="glyphicon glyphicon-arrow-up"></i> Back To Top</button>
 <?php wp_footer(); ?>
 </body>
 </html>
