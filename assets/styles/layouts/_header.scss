@@ -2,6 +2,7 @@
 .site-tagline {
   color: lighten($gray-light, 10%);
 }
+
 .site-logo {
   display: block;
   font-family: $headings-font-family;
@@ -12,12 +13,14 @@
     color: $brand-primary;
   }
 }
+
 .site-tagline {
   line-height: 1;
   display: block;
   font-family: $font-family-base;
   font-size: 18px;
 }
+
 .navbar-default {
   border-radius: 0;
   background: #ffffff;

@@ -1,6 +1,7 @@
 .home-item-heading {
   padding-bottom: 20px;
 }
+
 .home-item {
   padding-bottom: 30px;
   h2 {
@@ -11,7 +12,7 @@
     pointer-events: none;
     transition: opacity 0.5s;
     .glyphicon {
-      font-size:20px;
+      font-size: 20px;
       position: relative;
       z-index: 1;
     }
@@ -52,7 +53,7 @@
   li {
     display: inline-block;
     margin-right: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     &:last-child {
       margin-right: 0px;
     }

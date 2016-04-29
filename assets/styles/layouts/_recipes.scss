@@ -7,7 +7,9 @@
   }
   position: relative;
   .post-title {
-    h1 {margin-top:0}
+    h1 {
+      margin-top: 0
+    }
     display: block;
     position: absolute;
     bottom: 0;
@@ -23,6 +25,7 @@
     }
   }
 }
+
 .home .recipe,
 .tax-recipecategory .recipe {
   .post-title:hover {
