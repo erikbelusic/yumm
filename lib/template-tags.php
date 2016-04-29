@@ -25,6 +25,7 @@ if (!function_exists('yumm_list_recipe_categories')) {
         return $termsMarkup;
     }
 }
+
 if (!function_exists('yumm_list_all_recipe_categories')) {
     /*
      * Returns HTML links wrapped in <li> for all non empty recipe categories.
@@ -42,6 +43,7 @@ if (!function_exists('yumm_list_all_recipe_categories')) {
         return $termsMarkup;
     }
 }
+
 if (!function_exists('yumm_has_recipe_categories')) {
     /*
      * Checks if the current recipe is in any recipe categories.
